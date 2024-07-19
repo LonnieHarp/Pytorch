@@ -1,0 +1,16 @@
+To get the full guide it would be best to go to the site https://pytorch.org/.
+
+Setting up on a windows machine I will be going with the cuda support as well as with andanconda
+**Note that it is required to have at least window 7 or higher. As well as only supported with the python language. 
+
+First download anaconda from there website https://www.anaconda.com/download
+This will give python as will as the pip install. This also install many other usefull libray's like numpy and sklearn. 
+** They will try to get you to sign up with an email, but you can just skip it with the button right bellow. 
+
+after it is downloaded open the anaconda prompt and install the commands
+**note that this may take some time go make a sandwhich. 
+pip install torch
+pip install numpy
+pip install pandas
+pip install sklearn
+pip install matplotlib
