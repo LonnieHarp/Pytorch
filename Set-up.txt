@@ -1,0 +1,36 @@
+For the set up I will be using a local set up. To get ready for pytorch use I'll need to do some things.
+
+1. download needed files
+    - anaconda
+    - pytorch
+    - numpy
+    - pandas
+    - nvidia cuda toolkit (for use of an amd gpu this may differ)
+
+first download anaconda and then open the command prompt and enter the following commands:
+1
+2
+3
+4
+5
+6. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/ 
+    This will take some time go make a sandwich. 
+    - Check if cuda is install properly go to a python script and and run
+        import torch
+        if torch.cuda.is_available():
+            print("Ready!")
+
+
+once you have these ready you will be able to use the pip installer
+go into vs code and in the terminal type in these commands to get started.
+** note that you may need to do this in powershell if on windows. 
+1. pip install torch
+2. pip install numpy
+3. pip install pandas
+4. pip install Matplotlib 
+These all can be copy and paste
+
+
+
+
+
