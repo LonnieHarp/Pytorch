@@ -8,3 +8,5 @@ def loss_functions():
     return Image('Images_path/common_loss_functions.png', width=750, height=750)
 def nn_modules():
     return Image('Images_path/nn_modules.png', width=750, height=750)
+def training_loop():
+    return Image('Images_path/training_loop.png', width=750,height=750)
