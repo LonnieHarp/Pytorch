@@ -1,4 +1,7 @@
-For the set up I will be using a local set up. To get ready for pytorch use I'll need to do some things.
+For the set up I will be using a local set up via vs code. To get ready for pytorch use I'll need to do some things.
+
+* keep in mind that all pip installs will be made inside of the terminal of vs code,
+    or inside of the cmd prompt (You can also make these inside of anaconda cmd prompt). 
 
 1. download needed files
     - anaconda
@@ -6,19 +9,14 @@ For the set up I will be using a local set up. To get ready for pytorch use I'll
     - numpy
     - pandas
     - nvidia cuda toolkit (for use of an amd gpu this may differ)
+    - python
 
 first download anaconda and then open the command prompt and enter the following commands:
-1
-2
-3
-4
-5
-6. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/ 
+1. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/ 
     This will take some time go make a sandwich. 
-    - Check if cuda is install properly go to a python script and and run
+    - Check if cuda is install properly go to a python script (or .ipynb file) and and run
         import torch
-        if torch.cuda.is_available():
-            print("Ready!")
+        torch.cuda.is_available()
 
 
 once you have these ready you will be able to use the pip installer
@@ -30,7 +28,8 @@ go into vs code and in the terminal type in these commands to get started.
 4. pip install Matplotlib 
 These all can be copy and paste
 
+So I can save all the images to one file and call them to any file
+    import *notebook name* as *whatever*
 
-
-
-
+To have the use of accuracy one easy way to do it is 
+pip install torchmetrics
