@@ -3,33 +3,48 @@ For the set up I will be using a local set up via vs code. To get ready for pyto
 * keep in mind that all pip installs will be made inside of the terminal of vs code,
     or inside of the cmd prompt (You can also make these inside of anaconda cmd prompt). 
 
-1. download needed files
-    - anaconda
+# Download needed files
     - pytorch
     - numpy
     - pandas
     - nvidia cuda toolkit (for use of an amd gpu this may differ)
     - python
 
-first download anaconda and then open the command prompt and enter the following commands:
-1. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/ 
-    This will take some time go make a sandwich. 
-    - Check if cuda is install properly go to a python script (or .ipynb file) and and run
-        import torch
-        torch.cuda.is_available()
+# Cuda
+    first open the command prompt and enter the following commands:
+    1. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/ 
+        This will take some time go make a sandwich. 
+        - Check if cuda is install properly go to a python script (or .ipynb file) and and run
+            import torch
+            torch.cuda.is_available()
 
+# Pip installs
+    once you have these ready you will be able to use the pip installer
+    go into vs code and in the terminal type in these commands to get started.
+    ** note that you may need to do this in powershell if on windows. 
+    1. pip install torch
+    2. pip install numpy
+    3. pip install pandas
+    4. pip install Matplotlib 
+    These all can be copy and paste
 
-once you have these ready you will be able to use the pip installer
-go into vs code and in the terminal type in these commands to get started.
-** note that you may need to do this in powershell if on windows. 
-1. pip install torch
-2. pip install numpy
-3. pip install pandas
-4. pip install Matplotlib 
-These all can be copy and paste
+# Import other files
+    So I can save all the images to one file and call them to any file
+        import *notebook name* as *whatever*
 
-So I can save all the images to one file and call them to any file
-    import *notebook name* as *whatever*
+# Accuracy
+    To have the use of accuracy one easy way to do it is 
+    pip install torchmetrics
 
-To have the use of accuracy one easy way to do it is 
-pip install torchmetrics
+# Python update
+    ** IF YOU ARE TO UPDATE YOUR PYTHON VERSION THESE STEPS MUST BE DONE ONCE MORE
+        (if getting a access denied error close vs code and run inside cmd)
+    create a new conda environment by:
+    1. conda create -n *name_of_environment* python=3.13
+    2. conda activate *name_of_environment*
+    3. conda install pytorch torchvision torchaudio -c pytorch
+    IF USING PIP:
+    3. pip install --upgrade torch torchvision torchaudio
+
+    reinstall cuda packages https://pytorch.org/get-started/locally/
+    
