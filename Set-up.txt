@@ -11,8 +11,9 @@ For the set up I will be using a local set up via vs code. To get ready for pyto
     - python
 
 # Cuda
-    first open the command prompt and enter the following commands:
-    1. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/ 
+    first open the anaconda command prompt and enter the following commands:
+    1. Install the latest version of cuda. You can find this command on pytorch website https://pytorch.org/get-started/locally/
+    * uninstall pytorch (pip uninstall torch) and then install the cuda command
         This will take some time go make a sandwich. 
         - Check if cuda is install properly go to a python script (or .ipynb file) and and run
             import torch
