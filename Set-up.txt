@@ -49,3 +49,6 @@ For the set up I will be using a local set up via vs code. To get ready for pyto
 
     reinstall cuda packages https://pytorch.org/get-started/locally/
     
+# Using progress bar
+    1. pip instal tqdm
+    2. pip install ipywidgets # so that juptyer notebook can display it. 
